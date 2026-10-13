@@ -19,8 +19,8 @@ SU-DevOps/
 │       └── ci.yml                            # GitHub Actions CI/CD Pipeline
 ├── .gitignore                                # Git ignore file
 ├── README.md                                 # Main repository documentation
-├── DevOps_Unit1.docx                         # Unit 1 DevOps Assignment
-├── DevOps_Unit2.pdf                          # Unit 2 DevOps Assignment
+├── PRANAV_GAIKWAD_2125UMLM1041_DevOps_Unit1_MiniProject.docx # Unit 1 DevOps Assignment
+├── Agile_Mini_Project_Unit2.docx             # Unit 2 DevOps Assignment
 └── Library_Management_Platform_Working/      # Library Management Application
     ├── .github/workflows/ci.yml              # Local workflow specification
     ├── .gitignore                            # Component-specific ignore rules
