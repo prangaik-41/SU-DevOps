@@ -171,6 +171,7 @@ This repository includes a **GitHub Actions** workflow (`.github/workflows/ci.ym
 ---
 
 ## 👩‍💻 Author
-
+**Pranav Gaikwad**
+Github : [prangaik-41](https://github.com/prangaik-41)
 **Vedika Pangavhane**  
 GitHub: [@vedikapangavhane2007](https://github.com/vedikapangavhane2007)
