@@ -1,0 +1,15 @@
+{% extends "base.html" %}{% block content %}
+<div class="login-wrap"><div class="card login-card">
+<h1>📚 Library Management Platform</h1><p>Sign in to continue</p>
+<form method="post">
+<label>Email</label><input name="email" type="email" required placeholder="student@library.com">
+<label>Password</label><input name="password" type="password" required placeholder="Password">
+<button>Login</button>
+</form>
+<div class="hint"><b>Demo accounts</b><br>
+Admin: admin@library.com / admin123<br>
+Librarian: librarian@library.com / lib123<br>
+Student: student@library.com / student123<br>
+Faculty: faculty@library.com / faculty123
+</div></div></div>
+{% endblock %}

@@ -1,0 +1,5 @@
+{% extends "base.html" %}{% block content %}
+<h1>Transactions</h1><div class="card"><table><tr><th>Book</th><th>User</th><th>Issue</th><th>Due</th><th>Return</th><th>Fine</th><th>Action</th></tr>
+{% for t in transactions %}<tr><td>{{t.title}}</td><td>{{t.name}}</td><td>{{t.issue_date}}</td><td>{{t.due_date}}</td><td>{{t.return_date or '-'}}</td><td>₹{{"%.2f"|format(t.fine or 0)}}</td>
+<td>{% if not t.return_date and current_role in ['admin','librarian'] %}<form method="post" action="{{url_for('return_book',transaction_id=t.id)}}"><button class="smallbtn">Return</button></form>{% else %}-{% endif %}</td></tr>
+{% else %}<tr><td colspan="7">No transactions found.</td></tr>{% endfor %}</table></div>{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% block content %}
+<div class="card form-card"><h1>Issue Book</h1>
+<p><b>{{book.title}}</b> by {{book.author}}</p>
+<form method="post">
+{% if current_role in ['admin','librarian'] %}
+<label>Issue to</label><select name="user_id" required>{% for u in users %}<option value="{{u.id}}">{{u.name}} — {{u.email}}</option>{% endfor %}</select>
+{% else %}<p>This book will be issued to <b>{{current_user}}</b>.</p>{% endif %}
+<button>Confirm Issue</button></form></div>{% endblock %}

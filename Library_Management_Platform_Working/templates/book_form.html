@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% block content %}
+<div class="card form-card"><h1>Add Book</h1><form method="post">
+<label>Title</label><input name="title" required>
+<label>Author</label><input name="author" required>
+<label>Category</label><input name="category">
+<label>ISBN</label><input name="isbn">
+<label>Shelf Location</label><input name="shelf">
+<button>Add Book</button></form></div>{% endblock %}

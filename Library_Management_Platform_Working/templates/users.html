@@ -1,0 +1,4 @@
+{% extends "base.html" %}{% block content %}
+<h1>Users</h1><div class="card"><table><tr><th>Name</th><th>Email</th><th>Role</th></tr>
+{% for u in users %}<tr><td>{{u.name}}</td><td>{{u.email}}</td><td>{{u.role|capitalize}}</td></tr>{% endfor %}
+</table></div>{% endblock %}

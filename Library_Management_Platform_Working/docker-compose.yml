@@ -1,0 +1,7 @@
+services:
+  library:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./library.db:/app/library.db

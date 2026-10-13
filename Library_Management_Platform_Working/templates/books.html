@@ -1,0 +1,11 @@
+{% extends "base.html" %}{% block content %}
+<div class="top"><h1>Book Catalog</h1>{% if current_role in ['admin','librarian'] %}<a class="button" href="{{url_for('add_book')}}">+ Add Book</a>{% endif %}</div>
+<form class="search" method="get"><input name="q" value="{{q}}" placeholder="Search title, author, category or ISBN"><button>Search</button></form>
+<div class="card"><table><tr><th>Title</th><th>Author</th><th>Category</th><th>ISBN</th><th>Shelf</th><th>Status</th><th>Action</th></tr>
+{% for b in books %}<tr>
+<td><b>{{b.title}}</b></td><td>{{b.author}}</td><td>{{b.category}}</td><td>{{b.isbn}}</td><td>{{b.shelf}}</td>
+<td><span class="badge {{'available' if b.status=='Available' else 'issued'}}">{{b.status}}</span></td>
+<td>{% if b.status=='Available' %}<a class="smallbtn" href="{{url_for('issue',book_id=b.id)}}">Issue</a>{% endif %}
+{% if current_role in ['admin','librarian'] %}<form class="inline" method="post" action="{{url_for('delete_book',book_id=b.id)}}" onsubmit="return confirm('Delete this book?')"><button class="dangerbtn">Delete</button></form>{% endif %}</td>
+</tr>{% else %}<tr><td colspan="7">No books found.</td></tr>{% endfor %}</table></div>
+{% endblock %}

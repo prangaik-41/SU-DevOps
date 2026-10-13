@@ -1,0 +1,14 @@
+{% extends "base.html" %}{% block content %}
+<div class="top"><div><h1>Welcome, {{current_user}}</h1><p class="muted">Role: {{current_role|capitalize}}</p></div></div>
+<div class="stats">
+<div class="stat"><span>Total Books</span><b>{{stats.books}}</b></div>
+<div class="stat"><span>Available</span><b>{{stats.available}}</b></div>
+<div class="stat"><span>Issued</span><b>{{stats.issued}}</b></div>
+<div class="stat"><span>Total Users</span><b>{{stats.users}}</b></div>
+</div>
+<div class="card"><h2>Recent Transactions</h2>
+<table><tr><th>Book</th><th>User</th><th>Issued</th><th>Due</th><th>Status</th></tr>
+{% for t in recent %}<tr><td>{{t.title}}</td><td>{{t.name if t.name else current_user}}</td><td>{{t.issue_date}}</td><td>{{t.due_date}}</td><td>{{"Returned" if t.return_date else "Issued"}}</td></tr>
+{% else %}<tr><td colspan="5">No transactions yet.</td></tr>{% endfor %}
+</table></div>
+{% endblock %}
