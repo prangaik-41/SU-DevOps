@@ -1,6 +1,6 @@
 # DevOps & Library Management Platform
 
-[![Library Platform CI](https://github.com/vedikapangavhane2007/devops/actions/workflows/ci.yml/badge.svg)](https://github.com/vedikapangavhane2007/devops/actions/workflows/ci.yml)
+[![Library Platform CI](https://github.com/prangaik-41/SU-DevOps/actions/workflows/ci.yml/badge.svg)](https://github.com/prangaik-41/SU-DevOps/actions/workflows/ci.yml)
 ![Python Version](https://img.shields.io/badge/python-3.10%20%7C%203.12-blue.svg)
 ![Framework](https://img.shields.io/badge/framework-Flask%203.1-black.svg)
 ![Docker](https://img.shields.io/badge/docker-ready-2496ED.svg)
@@ -13,14 +13,14 @@ A comprehensive DevOps repository containing academic coursework submissions alo
 ## 📁 Repository Structure
 
 ```text
-devops/
+SU-DevOps/
 ├── .github/
 │   └── workflows/
 │       └── ci.yml                            # GitHub Actions CI/CD Pipeline
 ├── .gitignore                                # Git ignore file
 ├── README.md                                 # Main repository documentation
-├── Vedika_Pangavhane_2125UMLF1022_DevOps_Unit1.docx # Unit 1 DevOps Assignment
-├── Vedika_Pangavhane_2125UMLF1022_Devops_Unit2.pdf  # Unit 2 DevOps Assignment
+├── DevOps_Unit1.docx                         # Unit 1 DevOps Assignment
+├── DevOps_Unit2.pdf                          # Unit 2 DevOps Assignment
 └── Library_Management_Platform_Working/      # Library Management Application
     ├── .github/workflows/ci.yml              # Local workflow specification
     ├── .gitignore                            # Component-specific ignore rules
@@ -86,8 +86,8 @@ The platform initializes with pre-configured accounts for testing:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/vedikapangavhane2007/devops.git
-   cd devops/Library_Management_Platform_Working
+   git clone https://github.com/prangaik-41/SU-DevOps.git
+   cd SU-DevOps/Library_Management_Platform_Working
    ```
 
 2. **Create and activate a virtual environment**:
@@ -171,7 +171,5 @@ This repository includes a **GitHub Actions** workflow (`.github/workflows/ci.ym
 ---
 
 ## 👩‍💻 Author
-**Pranav Gaikwad**
-Github : [prangaik-41](https://github.com/prangaik-41)
-**Vedika Pangavhane**  
-GitHub: [@vedikapangavhane2007](https://github.com/vedikapangavhane2007)
+**Pranav Gaikwad**  
+GitHub: [prangaik-41](https://github.com/prangaik-41)
